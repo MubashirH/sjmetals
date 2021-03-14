@@ -8,7 +8,7 @@
   user-select: none;
 }
 
-ul, li, p, h1, h2, h3, h4, h5 {
+ul, li, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   color: white;
@@ -24,6 +24,9 @@ button {
   letter-spacing: 1px;
   font-weight: 500;
   position: relative;
+}
+button:focus {
+  outline: none;
 }
 button:hover {
   letter-spacing: 1.5px;
@@ -266,10 +269,10 @@ button::after {
 }
 .description .image {
   background-color: #000105;
-  height: 400px;
+  height: 100%;
 }
 .description .info {
-  margin-top: 50px;
+  margin: 50px 0;
   height: 100%;
 }
 .description .info h1 {
@@ -285,9 +288,31 @@ button::after {
   margin-top: 30px;
 }
 
+.description_modal {
+  position: fixed;
+  right: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 500px;
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 9px 12px 20px 7px #0001052b;
+  z-index: 100;
+  transition: 300ms all ease-in-out;
+}
+.description_modal p {
+  text-align: justify;
+  margin-top: 10px;
+  color: #000105;
+}
+.description_modal p span {
+  color: #ee313f;
+}
+
 .products {
   background-color: #000732;
-  padding: 5% 0;
+  padding: 8% 0;
   margin-top: 80px;
 }
 .products .content {
@@ -327,6 +352,7 @@ button::after {
   left: 10%;
   z-index: 100;
   border-radius: 5px;
+  min-height: 100px;
 }
 .products .content .complete .head {
   font-weight: 700;
@@ -344,6 +370,95 @@ button::after {
 }
 .products .content:hover .complete {
   display: block;
+}
+
+.about h1, .about p {
+  color: #000105;
+  margin-top: 20px;
+}
+.about h1 {
+  color: #ee313f;
+}
+.about p {
+  text-align: justify;
+}
+
+.contact .image {
+  background: #000105;
+  height: 100%;
+}
+.contact form {
+  width: 90%;
+  margin: 40px auto;
+  position: relative;
+  z-index: 1;
+}
+.contact form h1 {
+  color: #000105;
+  position: relative;
+  margin-bottom: 10px;
+}
+.contact form h1 span {
+  color: #ee313f;
+}
+.contact form h1::after {
+  position: absolute;
+  content: "REQUEST";
+  font-size: 90px;
+  left: -20px;
+  top: -32px;
+  opacity: 0.1;
+  z-index: -1;
+}
+.contact form p {
+  color: #000105;
+  letter-spacing: 8px;
+  font-weight: 700;
+  position: relative;
+}
+.contact form p::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 20%;
+  left: -3%;
+  bottom: -10px;
+  background: #ee313f;
+}
+.contact form .half {
+  width: 48%;
+}
+.contact form .half:nth-of-type(2) {
+  float: right;
+}
+.contact form textarea {
+  min-height: 200px;
+}
+.contact form button {
+  margin-top: 20px;
+  border: 1px solid #ee313f;
+  border-radius: 2px;
+  width: 100px;
+  color: #ee313f;
+}
+.contact form button:hover {
+  background: #ee313f;
+  color: white;
+}
+.contact form button::after {
+  display: none;
+}
+
+footer {
+  padding: 5% 0;
+  background: #000105;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: #ee313f;
 }
 
 /*# sourceMappingURL=style.css.map */
