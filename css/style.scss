@@ -378,7 +378,7 @@ button {
                 left: 0;
                 opacity: 0;
                 width: 100%;
-                background: #26569f96;
+                background: #26569fc2;
                 padding: 20% 10%;
                 height: 100%;
                 display: table;
@@ -402,7 +402,7 @@ button {
             }
             &:hover {
                 img { 
-                    -webkit-filter: blur(5px) grayscale(1);
+                    -webkit-filter: blur(10px) grayscale(1);
                     filter:blur(5px) grayscale(1);
                 }
                 .info {
@@ -414,6 +414,39 @@ button {
         .margin { margin-top: 50px;}
     }
 
+}
+
+.gallery {
+    h1 { color: $heading; margin-bottom: 30px;}
+    .column {
+        flex: 33.2%;
+        .gallery_img { width: 100%; margin-bottom: 10px;}
+        @include screen768() {
+            flex: 47%;
+            padding: 0 5px;
+        }
+    }
+}
+.gallery_modal {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    display: none;
+    height: 100vh;
+    background-color: rgb(31 31 31 / 91%);
+    z-index: 1000;
+    img {
+        height: 80%;    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include screen768() {
+            height: auto;
+            width: 80%;
+        }
+    }
 }
 
 .contact {

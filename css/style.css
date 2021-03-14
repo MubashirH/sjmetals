@@ -404,7 +404,7 @@ button::after {
   left: 0;
   opacity: 0;
   width: 100%;
-  background: #26569f96;
+  background: #26569fc2;
   padding: 20% 10%;
   height: 100%;
   display: table;
@@ -431,7 +431,7 @@ button::after {
   color: #33ab0f;
 }
 .about .team .wrapper:hover img {
-  -webkit-filter: blur(5px) grayscale(1);
+  -webkit-filter: blur(10px) grayscale(1);
   filter: blur(5px) grayscale(1);
 }
 .about .team .wrapper:hover .info {
@@ -440,6 +440,48 @@ button::after {
 }
 .about .team .margin {
   margin-top: 50px;
+}
+
+.gallery h1 {
+  color: #33ab0f;
+  margin-bottom: 30px;
+}
+.gallery .column {
+  flex: 33.2%;
+}
+.gallery .column .gallery_img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .gallery .column {
+    flex: 47%;
+    padding: 0 5px;
+  }
+}
+
+.gallery_modal {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  display: none;
+  height: 100vh;
+  background-color: rgba(31, 31, 31, 0.91);
+  z-index: 1000;
+}
+.gallery_modal img {
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .gallery_modal img {
+    height: auto;
+    width: 80%;
+  }
 }
 
 .contact h1 {
