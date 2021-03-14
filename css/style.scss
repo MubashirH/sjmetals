@@ -351,9 +351,58 @@ button {
 }
 
 .about {
-    h1,p { color: $text; margin-top: 20px;}
-    h1 { color: $heading;}
-    p { text-align: justify;}
+    h1 {color: $heading; margin: 30px 0;}
+    .company {
+        p { color: $text; text-align: justify;}
+    }
+    .team {
+        .wrapper {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 50px;
+            img { width: 100%; }
+            .info {
+                position: absolute;
+                top:0;
+                left: 0;
+                opacity: 0;
+                width: 100%;
+                background: #26569f96;
+                padding: 20% 10%;
+                height: 100%;
+                display: table;
+                h1 { 
+                    color: $heading; 
+                    margin-bottom: 30px;
+                    font-family: 'Poppins',sans-serif;
+                }
+                h3 { margin-bottom: 20px;}
+                p {
+                    display: table-row;
+                    height: fit-content;
+                    a { 
+                        margin-top: 10px;
+                        color: white;
+                        text-decoration: none;
+                        &:hover { color: $heading;}
+                    }
+                }
+            }
+            &:hover {
+                img { 
+                    -webkit-filter: blur(5px) grayscale(1);
+                    filter:blur(5px) grayscale(1);
+                }
+                .info {
+                    transition: 200ms all ease-in-out;
+                    opacity: 1;
+                }
+            }
+        }
+        .margin { margin-top: 100px;}
+    }
+
 }
 
 .contact {

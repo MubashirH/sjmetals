@@ -372,15 +372,64 @@ button::after {
   display: block;
 }
 
-.about h1, .about p {
-  color: #000105;
-  margin-top: 20px;
-}
 .about h1 {
   color: #ee313f;
+  margin: 30px 0;
 }
-.about p {
+.about .company p {
+  color: #000105;
   text-align: justify;
+}
+.about .team .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 50px;
+}
+.about .team .wrapper img {
+  width: 100%;
+}
+.about .team .wrapper .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  background: #26569f96;
+  padding: 20% 10%;
+  height: 100%;
+  display: table;
+}
+.about .team .wrapper .info h1 {
+  color: #ee313f;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.about .team .wrapper .info h3 {
+  margin-bottom: 20px;
+}
+.about .team .wrapper .info p {
+  display: table-row;
+  height: fit-content;
+}
+.about .team .wrapper .info p a {
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+.about .team .wrapper .info p a:hover {
+  color: #ee313f;
+}
+.about .team .wrapper:hover img {
+  -webkit-filter: blur(5px) grayscale(1);
+  filter: blur(5px) grayscale(1);
+}
+.about .team .wrapper:hover .info {
+  transition: 200ms all ease-in-out;
+  opacity: 1;
+}
+.about .team .margin {
+  margin-top: 100px;
 }
 
 .contact .image {
