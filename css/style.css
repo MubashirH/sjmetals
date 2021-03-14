@@ -216,6 +216,11 @@ button::after {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 600px) {
+  .banner {
+    height: 400px;
+  }
+}
 .banner .slogan {
   border: 10px solid #ffffffd5;
   padding: 4% 10%;
@@ -231,7 +236,8 @@ button::after {
 }
 @media (max-width: 900px) {
   .banner .slogan {
-    width: 100%;
+    width: 97%;
+    margin: 90px auto;
   }
 }
 .banner .start {
@@ -351,10 +357,16 @@ button::after {
   width: 480px;
   padding: 30px;
   background: white;
+  display: none;
   border-radius: 5px;
   box-shadow: 9px 12px 20px 7px #0001052b;
   z-index: 100;
   transition: 300ms all ease-in-out;
+}
+@media (max-width: 600px) {
+  .description_modal {
+    padding: 10px;
+  }
 }
 @media (max-width: 480px) {
   .description_modal {
@@ -425,6 +437,17 @@ button::after {
   letter-spacing: 1.2px;
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  .products .content .short {
+    display: none;
+  }
+  .products .content .complete {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+}
 .products .content:hover {
   transition: 150ms all ease-in-out;
 }
@@ -487,8 +510,20 @@ button::after {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
+@media (max-width: 600px) {
+  .about .team .wrapper .info h1 {
+    margin: 5px 0 10px 0;
+    font-size: 20px;
+  }
+}
 .about .team .wrapper .info h3 {
   margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .about .team .wrapper .info h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
 }
 .about .team .wrapper .info p {
   display: table-row;
@@ -501,6 +536,11 @@ button::after {
 }
 .about .team .wrapper .info p a:hover {
   color: #33ab0f;
+}
+@media (max-width: 600px) {
+  .about .team .wrapper .info p a {
+    font-size: 16px;
+  }
 }
 .about .team .wrapper:hover img {
   -webkit-filter: blur(10px) grayscale(1);

@@ -1,22 +1,49 @@
+
+function mobileMenuTransition() {
+    const mobileMenu = document.querySelector('.mobile_menu_list')
+    const humberger = document.querySelector('.humberger_icon')
+    const bodyWrapper = document.querySelector('.body_wrapper')
+    let clicked = false
+    humberger.addEventListener('click', function() {
+        if (clicked) {
+            humberger.src = './images/icons/menu.svg'
+            mobileMenu.style.right = '-100%'
+            bodyWrapper.style.filter = 'blur(0px)'
+            clicked = false
+        } else {
+            humberger.src = './images/icons/close.svg'
+            mobileMenu.style.right = '0px'
+            bodyWrapper.style.filter = 'blur(3px)'
+            clicked = true
+        }
+    })
+}
+
+
+
 $(document).ready( function() {
 
     $(this).scroll(function() {
+        $('.description_modal').hide()
         $('.description_modal').css('right','-150%');
     })
     
     $(this).click( function() {
+        $('.description_modal').hide()
         $('.description_modal').css('right','-150%');
     })
 
     if ($(window).width() > 480) {
         $('.learn').click(function(e) {
             e.stopPropagation();
+            $('.description_modal').show()
             $('.description_modal').css('right','7%');
             console.log('s')
         })
     } else {
         $('.learn').click(function(e) {
             e.stopPropagation();
+            $('.description_modal').show()
             $('.description_modal').css('right','1%');
             console.log('s')
         })
@@ -45,23 +72,3 @@ function galleryPop() {
     })
 }
 
-
-function mobileMenuTransition() {
-    const mobileMenu = document.querySelector('.mobile_menu_list')
-    const humberger = document.querySelector('.humberger_icon')
-    const bodyWrapper = document.querySelector('.body_wrapper')
-    let clicked = false
-    humberger.addEventListener('click', function() {
-        if (clicked) {
-            humberger.src = './images/icons/menu.svg'
-            mobileMenu.style.right = '-100%'
-            bodyWrapper.style.filter = 'blur(0px)'
-            clicked = false
-        } else {
-            humberger.src = './images/icons/close.svg'
-            mobileMenu.style.right = '0px'
-            bodyWrapper.style.filter = 'blur(3px)'
-            clicked = true
-        }
-    })
-}

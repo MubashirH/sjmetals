@@ -236,6 +236,7 @@ button {
     background-image: url('../images/banner 2.jpg');
     background-position: center;
     background-size: cover ;
+    @include screen600() { height: 400px;}
     .slogan {
         border: 10px solid #ffffffd5;
         padding: 4% 10%;
@@ -244,7 +245,7 @@ button {
         font-style: italic;
         text-align: center;
         @include screen1200() { width: 70%;}
-        @include screen900() { width: 100%;}
+        @include screen900() { width: 97%; margin: 90px auto;}
     }
     .start {
         position: absolute;
@@ -327,10 +328,12 @@ button {
     width: 480px;
     padding: 30px;
     background: white;
+    display: none;
     border-radius: 5px;
     box-shadow: 9px 12px 20px 7px #0001052b;
     z-index: 100;
     transition: 300ms all ease-in-out;
+    @include screen600() { padding: 10px;}
     @include screen480() { width: 98%; }
     p {
         text-align: justify;
@@ -380,6 +383,10 @@ button {
             @include screen1200() { width: 130%; left: 0;}
             .head { font-weight: 700; letter-spacing: 1.2px; text-decoration: underline;}
         }
+        @include screen768() {
+            .short { display: none;}
+            .complete { display: block; position: relative; width: 100%; top: 0;}
+        }
         &:hover {
             transition: 150ms all ease-in-out;
             h2 { color: white;}
@@ -419,8 +426,12 @@ button {
                     margin-bottom: 30px;
                     font-weight: 700;
                     font-family: 'Poppins',sans-serif;
+                    @include screen600() { margin: 5px 0 10px 0; font-size: 20px;}
                 }
-                h3 { margin-bottom: 20px;}
+                h3 { 
+                    margin-bottom: 20px;
+                    @include screen600() { margin-bottom: 10px; font-size: 18px;}
+                }
                 p {
                     display: table-row;
                     height: fit-content;
@@ -429,6 +440,7 @@ button {
                         color: white;
                         text-decoration: none;
                         &:hover { color: $heading;}
+                        @include screen600() { font-size: 16px;}
                     }
                 }
             }
