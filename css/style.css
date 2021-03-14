@@ -384,7 +384,7 @@ button::after {
   width: 80%;
   margin: 0 auto;
   position: relative;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .about .team .wrapper img {
   width: 100%;
@@ -429,7 +429,7 @@ button::after {
   opacity: 1;
 }
 .about .team .margin {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .contact .image {
