@@ -13,14 +13,31 @@ $text: #000105;
 
 
 //media queres
+@mixin screen1200 {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
 @mixin screen1020 {
     @media (max-width: 1020px) {
         @content;
     }
 }
-//medium screens
+
+
+@mixin screen900 {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
 @mixin screen768 {
     @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin screen767 {
+    @media (max-width: 767px) {
         @content;
     }
 }
@@ -107,7 +124,7 @@ button {
         .logo {
             position: relative;
             img {
-                width: 25%;
+                width: 35%;
             }
         }
         .row {
@@ -226,6 +243,8 @@ button {
         margin: 150px auto;
         font-style: italic;
         text-align: center;
+        @include screen1200() { width: 70%;}
+        @include screen900() { width: 100%;}
     }
     .start {
         position: absolute;
@@ -238,12 +257,17 @@ button {
         left: 50%;
         padding: 5% 2%;
         transform: translateX(-50%);
+        @include screen1020() { width: 100%; padding: 8% 1%;}
+        @include screen767() { padding: 10% 1%;}
+        @include screen480() { padding: 15% 1%;}
+
         .inner {
             width: calc(100%/3.1);
             position: relative;
             display: inline-block;
             padding: 1% 5%;
             transition: 200ms all ease-in-out;
+            @include screen1200() { padding: 1%; }
             &:hover {
                 cursor: pointer;
                 h1 { left: 20px; }
@@ -259,6 +283,7 @@ button {
             h4 { 
                 letter-spacing: 2px; color: $heading; margin-bottom: 20px;
                 position: relative;
+                @include screen900() { font-size: 18px;}               
                 &::after {
                     position: absolute;
                     content: '';
@@ -267,8 +292,10 @@ button {
                     background-color: $heading;
                     top: 35px;
                     left: 0;
+                    @include screen480() { top: 50px;}
                 }
             }
+            p { @include screen900() { font-size: 14px;}}
         }
     }
 }
@@ -294,16 +321,17 @@ button {
 
 .description_modal {
     position: fixed;
-    right: -50%;
+    right: -150%;
     top: 50%;
     transform: translateY(-50%);
-    width: 500px;
+    width: 480px;
     padding: 30px;
     background: white;
     border-radius: 5px;
     box-shadow: 9px 12px 20px 7px #0001052b;
     z-index: 100;
     transition: 300ms all ease-in-out;
+    @include screen480() { width: 98%; }
     p {
         text-align: justify;
         margin-top: 10px;
@@ -349,6 +377,7 @@ button {
             z-index: 100;
             border-radius: 5px;
             min-height: 100px;
+            @include screen1200() { width: 130%; left: 0;}
             .head { font-weight: 700; letter-spacing: 1.2px; text-decoration: underline;}
         }
         &:hover {
@@ -371,6 +400,7 @@ button {
             margin: 0 auto;
             position: relative;
             margin-top: 100px;
+            @include screen1200() { width: 100%;}
             img { width: 100%; }
             .info {
                 position: absolute;
@@ -382,6 +412,8 @@ button {
                 padding: 20% 10%;
                 height: 100%;
                 display: table;
+                @include screen900() { padding: 10%;}
+                @include screen768() { padding: 5%; }
                 h1 { 
                     color: $heading; 
                     margin-bottom: 30px;
@@ -450,10 +482,14 @@ button {
 }
 
 .contact {
-    h1 { margin-left: 50px; color: $heading; margin-bottom: 30px;}
+    h1 { 
+        margin-left: 50px; color: $heading; margin-bottom: 30px;
+        @include screen900() { margin-left: 20px;}
+    }
     .map {
         .info { 
             padding: 50px 0 50px 50px;
+            @include screen900() { padding-left: 20px;}
             p, h3 { color: $text;}
         }
         .img {
@@ -461,6 +497,7 @@ button {
             background-position: center;
             background-size: cover;
             position: relative;
+            @include screen767() { height: 300px;}
             a {
                 position: absolute;
                 top: 0;

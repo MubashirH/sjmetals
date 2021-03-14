@@ -80,7 +80,7 @@ button::after {
   position: relative;
 }
 .menu_wrapper .desktop_menu .logo img {
-  width: 25%;
+  width: 35%;
 }
 .menu_wrapper .desktop_menu .row {
   align-items: center;
@@ -224,6 +224,16 @@ button::after {
   font-style: italic;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .banner .slogan {
+    width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .banner .slogan {
+    width: 100%;
+  }
+}
 .banner .start {
   position: absolute;
   width: 90%;
@@ -236,12 +246,33 @@ button::after {
   padding: 5% 2%;
   transform: translateX(-50%);
 }
+@media (max-width: 1020px) {
+  .banner .start {
+    width: 100%;
+    padding: 8% 1%;
+  }
+}
+@media (max-width: 767px) {
+  .banner .start {
+    padding: 10% 1%;
+  }
+}
+@media (max-width: 480px) {
+  .banner .start {
+    padding: 15% 1%;
+  }
+}
 .banner .start .inner {
   width: calc(100%/3.1);
   position: relative;
   display: inline-block;
   padding: 1% 5%;
   transition: 200ms all ease-in-out;
+}
+@media (max-width: 1200px) {
+  .banner .start .inner {
+    padding: 1%;
+  }
 }
 .banner .start .inner:hover {
   cursor: pointer;
@@ -263,6 +294,11 @@ button::after {
   margin-bottom: 20px;
   position: relative;
 }
+@media (max-width: 900px) {
+  .banner .start .inner h4 {
+    font-size: 18px;
+  }
+}
 .banner .start .inner h4::after {
   position: absolute;
   content: "";
@@ -271,6 +307,16 @@ button::after {
   background-color: #33ab0f;
   top: 35px;
   left: 0;
+}
+@media (max-width: 480px) {
+  .banner .start .inner h4::after {
+    top: 50px;
+  }
+}
+@media (max-width: 900px) {
+  .banner .start .inner p {
+    font-size: 14px;
+  }
 }
 
 .description {
@@ -299,16 +345,21 @@ button::after {
 
 .description_modal {
   position: fixed;
-  right: -50%;
+  right: -150%;
   top: 50%;
   transform: translateY(-50%);
-  width: 500px;
+  width: 480px;
   padding: 30px;
   background: white;
   border-radius: 5px;
   box-shadow: 9px 12px 20px 7px #0001052b;
   z-index: 100;
   transition: 300ms all ease-in-out;
+}
+@media (max-width: 480px) {
+  .description_modal {
+    width: 98%;
+  }
 }
 .description_modal p {
   text-align: justify;
@@ -363,6 +414,12 @@ button::after {
   border-radius: 5px;
   min-height: 100px;
 }
+@media (max-width: 1200px) {
+  .products .content .complete {
+    width: 130%;
+    left: 0;
+  }
+}
 .products .content .complete .head {
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -395,6 +452,11 @@ button::after {
   position: relative;
   margin-top: 100px;
 }
+@media (max-width: 1200px) {
+  .about .team .wrapper {
+    width: 100%;
+  }
+}
 .about .team .wrapper img {
   width: 100%;
 }
@@ -408,6 +470,16 @@ button::after {
   padding: 20% 10%;
   height: 100%;
   display: table;
+}
+@media (max-width: 900px) {
+  .about .team .wrapper .info {
+    padding: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .about .team .wrapper .info {
+    padding: 5%;
+  }
 }
 .about .team .wrapper .info h1 {
   color: #33ab0f;
@@ -489,8 +561,18 @@ button::after {
   color: #33ab0f;
   margin-bottom: 30px;
 }
+@media (max-width: 900px) {
+  .contact h1 {
+    margin-left: 20px;
+  }
+}
 .contact .map .info {
   padding: 50px 0 50px 50px;
+}
+@media (max-width: 900px) {
+  .contact .map .info {
+    padding-left: 20px;
+  }
 }
 .contact .map .info p, .contact .map .info h3 {
   color: #000105;
@@ -500,6 +582,11 @@ button::after {
   background-position: center;
   background-size: cover;
   position: relative;
+}
+@media (max-width: 767px) {
+  .contact .map .img {
+    height: 300px;
+  }
 }
 .contact .map .img a {
   position: absolute;

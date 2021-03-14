@@ -1,18 +1,26 @@
 $(document).ready( function() {
 
     $(this).scroll(function() {
-        $('.description_modal').css('right','-50%');
+        $('.description_modal').css('right','-150%');
     })
     
     $(this).click( function() {
-        $('.description_modal').css('right','-50%');
+        $('.description_modal').css('right','-150%');
     })
 
-    $('.learn').click(function(e) {
-        e.stopPropagation();
-        $('.description_modal').css('right','7%');
-        console.log('s')
-    })
+    if ($(window).width() > 480) {
+        $('.learn').click(function(e) {
+            e.stopPropagation();
+            $('.description_modal').css('right','7%');
+            console.log('s')
+        })
+    } else {
+        $('.learn').click(function(e) {
+            e.stopPropagation();
+            $('.description_modal').css('right','1%');
+            console.log('s')
+        })
+    }
 
     galleryPop()
     
