@@ -14,11 +14,19 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+a {
+  color: #000105;
+  text-decoration: none;
+}
+a:hover {
+  color: #33ab0f;
+}
+
 button {
   background: none;
   border: none;
   padding: 10px;
-  color: #ee313f;
+  color: #33ab0f;
   transition: 200ms all ease-in-out;
   border-radius: 5px;
   letter-spacing: 1px;
@@ -40,8 +48,8 @@ button::after {
   content: "";
   height: 10px;
   width: 10px;
-  border-right: 3px solid #ee313f;
-  border-bottom: 3px solid #ee313f;
+  border-right: 3px solid #33ab0f;
+  border-bottom: 3px solid #33ab0f;
   transform: rotate(-45Deg);
   transition: 200ms all ease-in-out;
   top: 17.5px;
@@ -49,7 +57,7 @@ button::after {
 }
 
 .menu_wrapper {
-  background: white;
+  background: #000105;
   position: fixed;
   top: 0;
   width: 100%;
@@ -90,14 +98,14 @@ button::after {
   width: -webkit-max-content;
 }
 .menu_wrapper .desktop_menu .row ul a {
-  color: #000105;
+  color: white;
   text-decoration: none;
   font-weight: 700;
   cursor: pointer;
 }
 .menu_wrapper .desktop_menu .row ul a:hover {
   text-decoration: none;
-  color: #ee313f;
+  color: #33ab0f;
 }
 .menu_wrapper .desktop_menu .row .icons img {
   width: 20%;
@@ -105,7 +113,7 @@ button::after {
 }
 .menu_wrapper .desktop_menu .row input {
   color: white;
-  background: #ee313f;
+  background: #33ab0f;
   border: none;
   padding: 0;
   max-height: 0;
@@ -204,7 +212,9 @@ button::after {
 .banner {
   height: 600px;
   position: relative;
-  background-color: black;
+  background-image: url("../images/banner 2.jpg");
+  background-position: center;
+  background-size: cover;
 }
 .banner .slogan {
   border: 10px solid #ffffffd5;
@@ -231,13 +241,13 @@ button::after {
   position: relative;
   display: inline-block;
   padding: 1% 5%;
+  transition: 200ms all ease-in-out;
 }
 .banner .start .inner:hover {
   cursor: pointer;
 }
 .banner .start .inner:hover h1 {
   left: 20px;
-  transition: 200ms all ease-in-out;
 }
 .banner .start .inner h1 {
   position: absolute;
@@ -246,11 +256,10 @@ button::after {
   font-size: 70px;
   font-family: "Poppins", sans-serif;
   top: -40px;
-  transition: 200ms all ease-in-out;
 }
 .banner .start .inner h4 {
   letter-spacing: 2px;
-  color: #ee313f;
+  color: #33ab0f;
   margin-bottom: 20px;
   position: relative;
 }
@@ -259,7 +268,7 @@ button::after {
   content: "";
   width: 50px;
   height: 2px;
-  background-color: #ee313f;
+  background-color: #33ab0f;
   top: 35px;
   left: 0;
 }
@@ -276,7 +285,7 @@ button::after {
   height: 100%;
 }
 .description .info h1 {
-  color: #ee313f;
+  color: #33ab0f;
   margin-bottom: 40px;
   letter-spacing: 1px;
 }
@@ -307,7 +316,7 @@ button::after {
   color: #000105;
 }
 .description_modal p span {
-  color: #ee313f;
+  color: #33ab0f;
 }
 
 .products {
@@ -327,7 +336,7 @@ button::after {
   font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
   text-align: center;
-  color: #ee313f;
+  color: #33ab0f;
   font-weight: 700;
 }
 .products .content img {
@@ -338,7 +347,7 @@ button::after {
   margin-top: 20px;
 }
 .products .content .short span {
-  color: #ee313ecb;
+  color: #33ab0fd2;
 }
 .products .content .complete {
   width: 80%;
@@ -348,7 +357,7 @@ button::after {
   background: white;
   padding: 20px;
   text-align: left;
-  color: #ee313f;
+  color: #33ab0f;
   left: 10%;
   z-index: 100;
   border-radius: 5px;
@@ -373,7 +382,7 @@ button::after {
 }
 
 .about h1 {
-  color: #ee313f;
+  color: #33ab0f;
   margin: 30px 0;
 }
 .about .company p {
@@ -401,8 +410,9 @@ button::after {
   display: table;
 }
 .about .team .wrapper .info h1 {
-  color: #ee313f;
+  color: #33ab0f;
   margin-bottom: 30px;
+  font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
 .about .team .wrapper .info h3 {
@@ -418,7 +428,7 @@ button::after {
   text-decoration: none;
 }
 .about .team .wrapper .info p a:hover {
-  color: #ee313f;
+  color: #33ab0f;
 }
 .about .team .wrapper:hover img {
   -webkit-filter: blur(5px) grayscale(1);
@@ -432,23 +442,53 @@ button::after {
   margin-top: 50px;
 }
 
+.contact h1 {
+  margin-left: 50px;
+  color: #33ab0f;
+  margin-bottom: 30px;
+}
+.contact .map .info {
+  padding: 50px 0 50px 50px;
+}
+.contact .map .info p, .contact .map .info h3 {
+  color: #000105;
+}
+.contact .map .img {
+  background-image: url("../images/map.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.contact .map .img a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.contact .map p {
+  margin-top: 10px;
+}
 .contact .image {
-  background: #000105;
+  background-image: url("../images/welding.jpg");
+  background-position: center;
+  background-size: cover;
   height: 100%;
 }
 .contact form {
   width: 90%;
-  margin: 40px auto;
+  margin: 50px auto;
   position: relative;
   z-index: 1;
 }
 .contact form h1 {
   color: #000105;
+  margin-left: 0;
   position: relative;
   margin-bottom: 10px;
 }
 .contact form h1 span {
-  color: #ee313f;
+  color: #33ab0f;
 }
 .contact form h1::after {
   position: absolute;
@@ -472,7 +512,7 @@ button::after {
   width: 20%;
   left: -3%;
   bottom: -10px;
-  background: #ee313f;
+  background: #33ab0f;
 }
 .contact form .half {
   width: 48%;
@@ -485,13 +525,13 @@ button::after {
 }
 .contact form button {
   margin-top: 20px;
-  border: 1px solid #ee313f;
+  border: 1px solid #33ab0f;
   border-radius: 2px;
   width: 100px;
-  color: #ee313f;
+  color: #33ab0f;
 }
 .contact form button:hover {
-  background: #ee313f;
+  background: #33ab0f;
   color: white;
 }
 .contact form button::after {
@@ -507,7 +547,7 @@ footer a {
   color: white;
 }
 footer a:hover {
-  color: #ee313f;
+  color: #33ab0f;
 }
 
 /*# sourceMappingURL=style.css.map */
