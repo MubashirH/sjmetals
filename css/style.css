@@ -577,12 +577,12 @@ button::after {
 }
 @media (max-width: 600px) {
   .sister_companies img {
-    width: 110px;
+    width: 100px;
   }
 }
 @media (max-width: 480px) {
   .sister_companies img {
-    width: 80px;
+    width: 60px;
   }
 }
 

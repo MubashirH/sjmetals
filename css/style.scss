@@ -473,8 +473,8 @@ button {
     h1 { color: $heading;}
     img { 
         width: 145px;
-        @include screen600() { width: 110px;}
-        @include screen480() { width: 80px;}
+        @include screen600() { width: 100px;}
+        @include screen480() { width: 60px;}
     }
 }
 
