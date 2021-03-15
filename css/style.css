@@ -223,7 +223,7 @@ button::after {
 }
 .banner .slogan {
   border: 10px solid #ffffffd5;
-  padding: 4% 10%;
+  padding: 4%;
   width: 50%;
   margin: 150px auto;
   font-style: italic;
@@ -238,6 +238,16 @@ button::after {
   .banner .slogan {
     width: 97%;
     margin: 90px auto;
+  }
+}
+.banner .slogan h2 {
+  letter-spacing: 1.5px;
+  font-size: 40px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .banner .slogan h2 {
+    font-size: 30px;
   }
 }
 .banner .start {
@@ -362,7 +372,7 @@ button::after {
   display: none;
   border-radius: 5px;
   box-shadow: 9px 12px 20px 7px #0001052b;
-  z-index: 100;
+  z-index: 1000;
   transition: 300ms all ease-in-out;
 }
 @media (max-width: 600px) {
@@ -554,6 +564,26 @@ button::after {
 }
 .about .team .margin {
   margin-top: 50px;
+}
+
+.sister_companies {
+  background: #000732;
+}
+.sister_companies h1 {
+  color: #33ab0f;
+}
+.sister_companies img {
+  width: 145px;
+}
+@media (max-width: 600px) {
+  .sister_companies img {
+    width: 110px;
+  }
+}
+@media (max-width: 480px) {
+  .sister_companies img {
+    width: 80px;
+  }
 }
 
 .gallery h1 {

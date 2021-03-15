@@ -239,13 +239,19 @@ button {
     @include screen600() { height: 400px;}
     .slogan {
         border: 10px solid #ffffffd5;
-        padding: 4% 10%;
+        padding: 4%;
         width: 50%;
         margin: 150px auto;
         font-style: italic;
         text-align: center;
         @include screen1200() { width: 70%;}
         @include screen900() { width: 97%; margin: 90px auto;}
+        h2 { 
+            letter-spacing: 1.5px;  
+            font-size: 40px;
+            font-weight: 700;
+            @include screen767() { font-size: 30px;}
+        }
     }
     .start {
         position: absolute;
@@ -333,7 +339,7 @@ button {
     display: none;
     border-radius: 5px;
     box-shadow: 9px 12px 20px 7px #0001052b;
-    z-index: 100;
+    z-index: 1000;
     transition: 300ms all ease-in-out;
     @include screen600() { padding: 10px;}
     @include screen480() { width: 98%; }
@@ -460,6 +466,16 @@ button {
         .margin { margin-top: 50px;}
     }
 
+}
+
+.sister_companies {
+    background: #000732;
+    h1 { color: $heading;}
+    img { 
+        width: 145px;
+        @include screen600() { width: 110px;}
+        @include screen480() { width: 80px;}
+    }
 }
 
 .gallery {
