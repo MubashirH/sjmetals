@@ -212,7 +212,7 @@ button::after {
 .banner {
   height: 600px;
   position: relative;
-  background-image: url("../images/banner 2.jpg");
+  background-image: url("../images/background.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -329,7 +329,9 @@ button::after {
   padding-top: 200px;
 }
 .description .image {
-  background-color: #000105;
+  background-image: url("../images/IMG_2105.jpg");
+  background-position: center;
+  background-size: cover;
   height: 100%;
 }
 .description .info {
@@ -614,6 +616,18 @@ button::after {
     padding-left: 20px;
   }
 }
+.contact .map .info .tel, .contact .map .info .mail {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  padding-left: 30px;
+}
+.contact .map .info .tel {
+  background-image: url("../images/icons/call.svg");
+}
+.contact .map .info .mail {
+  background-image: url("../images/icons/mail.svg");
+}
 .contact .map .info p, .contact .map .info h3 {
   color: #000105;
 }
@@ -710,6 +724,35 @@ button::after {
 footer {
   padding: 5% 0;
   background: #000105;
+}
+footer .mail, footer .site, footer .location, footer .tel, footer .insta, footer .facebook {
+  background-position: left;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+footer .mail {
+  background-image: url("../images/icons/mail.svg");
+}
+footer .site {
+  background-image: url("../images/icons/globe.svg");
+}
+footer .tel {
+  margin-bottom: 20px;
+  background-image: url("../images/icons/call.svg");
+}
+footer .location {
+  background-image: url("../images/icons/placeholder.svg");
+}
+footer .insta {
+  height: 40px;
+  background-size: contain;
+  background-image: url("../images/icons/instagram.svg");
+}
+footer .facebook {
+  height: 40px;
+  background-size: contain;
+  background-image: url("../images/icons/facebook.svg");
 }
 footer a {
   text-decoration: none;

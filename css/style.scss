@@ -233,7 +233,7 @@ button {
 .banner {
     height: 600px;
     position: relative;
-    background-image: url('../images/banner 2.jpg');
+    background-image: url('../images/background.jpg');
     background-position: center;
     background-size: cover ;
     @include screen600() { height: 400px;}
@@ -304,7 +304,9 @@ button {
 .description {
     padding-top: 200px;
     .image {
-        background-color: $text;
+        background-image: url('../images/IMG_2105.jpg');
+        background-position: center;
+        background-size: cover;
         height: 100%;
     }
     .info {
@@ -502,6 +504,14 @@ button {
         .info { 
             padding: 50px 0 50px 50px;
             @include screen900() { padding-left: 20px;}
+            .tel ,.mail {
+                background-position: left;
+                background-repeat: no-repeat;
+                background-size: 15px 15px;
+                padding-left: 30px;
+            }
+            .tel { background-image: url('../images/icons/call.svg');}
+            .mail { background-image: url('../images/icons/mail.svg');}
             p, h3 { color: $text;}
         }
         .img {
@@ -526,7 +536,8 @@ button {
         background-image: url('../images/welding.jpg');
         background-position: center;
         background-size: cover;
-        height: 100%;}
+        height: 100%;
+    }
     form {
         width: 90%;
         margin: 50px auto;
@@ -586,5 +597,17 @@ button {
 footer {
     padding: 5% 0;
     background: $text;
+    .mail ,.site, .location, .tel, .insta, .facebook{
+        background-position: left;
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+    }
+    .mail { background-image: url('../images/icons/mail.svg');}
+    .site { background-image: url('../images/icons/globe.svg');}
+    .tel { margin-bottom: 20px; background-image: url('../images/icons/call.svg');}
+    .location { background-image: url('../images/icons/placeholder.svg');}
+    .insta { height: 40px; background-size: contain; background-image: url('../images/icons/instagram.svg');}
+    .facebook { height: 40px; background-size: contain; background-image: url('../images/icons/facebook.svg');}
     a { text-decoration: none; color: white; &:hover { color: $heading;}}
 }
