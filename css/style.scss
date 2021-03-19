@@ -106,7 +106,10 @@ button {
     }
 }
 
-
+.body_wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
 .menu_wrapper {
     background: $text;
     position: fixed;

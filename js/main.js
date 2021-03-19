@@ -20,7 +20,7 @@ function mobileMenuTransition() {
 }
 
 window.addEventListener ("load", function() {
-    $('.body_wrapper').css('overflow','auto')
+    $('.body_wrapper').css({'overflow':'auto','height':'auto'})
     $('.video_wrapper').fadeOut(1000);
 });
 

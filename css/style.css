@@ -56,6 +56,11 @@ button::after {
   right: -5px;
 }
 
+.body_wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .menu_wrapper {
   background: #000105;
   position: fixed;
