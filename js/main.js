@@ -19,9 +19,14 @@ function mobileMenuTransition() {
     })
 }
 
+window.addEventListener ("load", function() {
+    $('.body_wrapper').css('overflow','auto')
+    $('.video_wrapper').fadeOut(1000);
+});
 
 
 $(document).ready( function() {
+
 
     $(this).scroll(function() {
         $('.description_modal').hide()

@@ -230,6 +230,24 @@ button {
     }
 }
 
+.video_wrapper {
+    position: absolute;
+    z-index: 1000;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    video {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 250px;
+        width: 150px;
+    }
+}
+
 .banner {
     height: 600px;
     position: relative;
