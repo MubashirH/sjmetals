@@ -597,6 +597,7 @@ button::after {
 }
 .sister_companies img {
   width: 145px;
+  height: auto;
 }
 @media (max-width: 600px) {
   .sister_companies img {

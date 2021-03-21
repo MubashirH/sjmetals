@@ -494,6 +494,7 @@ button {
     h1 { color: $heading;}
     img { 
         width: 145px;
+        height: auto;
         @include screen600() { width: 100px;}
         @include screen480() { width: 60px;}
     }
