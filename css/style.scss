@@ -9,7 +9,7 @@
 }
 
 $heading: #33ab0f;
-$text: #000105;
+$text: #0c0a16;
 
 
 //media queres
@@ -279,7 +279,7 @@ button {
         width: 90%;
         bottom: -125px;
         height: 250px;
-        background-image: url('../images/start_back.png');
+        background-image: url('../images/back1.png');
         background-position: center;
         background-size: cover;    
         left: 50%;
@@ -374,7 +374,7 @@ button {
 
 
 .products {
-    background-color: #000732;
+    background-color: #0c0a16;
     padding: 8% 0;
     margin-top: 80px;
     .content {
@@ -490,7 +490,7 @@ button {
 }
 
 .sister_companies {
-    background: #000732;
+    background: $text;
     h1 { color: $heading;}
     img { 
         width: 145px;
