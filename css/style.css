@@ -595,19 +595,36 @@ button::after {
 .sister_companies h1 {
   color: #33ab0f;
 }
-.sister_companies img {
+.sister_companies .img {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 145px;
-  height: auto;
+  height: 150px;
 }
 @media (max-width: 600px) {
-  .sister_companies img {
+  .sister_companies .img {
     width: 100px;
+    height: 120px;
   }
 }
 @media (max-width: 480px) {
-  .sister_companies img {
+  .sister_companies .img {
     width: 60px;
+    height: 80px;
   }
+}
+.sister_companies .litco {
+  background-image: url("../images/lit.png");
+}
+.sister_companies .meridian {
+  background-image: url("../images/mer.png");
+}
+.sister_companies .e-bin {
+  background-image: url("../images/bin.png");
+}
+.sister_companies .ice {
+  background-image: url("../images/ice.png");
 }
 
 .gallery h1 {

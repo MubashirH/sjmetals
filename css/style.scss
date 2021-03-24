@@ -492,12 +492,20 @@ button {
 .sister_companies {
     background: $text;
     h1 { color: $heading;}
-    img { 
+    
+    .img { 
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
         width: 145px;
-        height: auto;
-        @include screen600() { width: 100px;}
-        @include screen480() { width: 60px;}
+        height: 150px;
+        @include screen600() { width: 100px; height: 120px;}
+        @include screen480() { width: 60px; height: 80px;}
     }
+    .litco { background-image: url('../images/lit.png');}
+    .meridian { background-image: url('../images/mer.png');}
+    .e-bin { background-image: url('../images/bin.png');}
+    .ice { background-image: url('../images/ice.png');}
 }
 
 .gallery {
